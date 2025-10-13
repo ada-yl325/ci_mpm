@@ -1,13 +1,11 @@
-name: ci
-channels:
-  - defaults
-  - conda-forge
+name: ci_mpm
+channels: [conda-forge]
 dependencies:
-  - python=3.12
+  - python=3.13
   - pip
-  - numpy>1.2
-  - scipy
-  - matplotlib
-  - sympy
-  - flake8
-  - pytest
+  - pip:
+      - -e .
+      - pytest
+      - pytest-cov
+      - flake8
+

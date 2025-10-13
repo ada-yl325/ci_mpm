@@ -1,3 +1,20 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=75", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-functions"
+version = "0.1.0"
+description = "Toy repo for CI lecture"
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["simple_functions*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+
