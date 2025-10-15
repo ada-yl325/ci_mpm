@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: simple-functions
+Version: 0.1.0
+Summary: Toy repo for CI lecture
+Author: Your Name
+License: MIT
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+# CI MPM
+Toy repo with some simple functions for the CI lecture
